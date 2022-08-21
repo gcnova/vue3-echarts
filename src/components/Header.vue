@@ -6,8 +6,6 @@
   </div>
 </template>
 
-<script setup lang="ts"></script>
-
 <style scoped lang="less">
 .header {
   margin: 0 auto;
