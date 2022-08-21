@@ -1,12 +1,14 @@
 
 <template>
   <div class="root">
+    <Header />
     <router-view></router-view>
-  </div>zoom
+  </div>
 </template>
 
 <script setup lang="ts">
 import { onMounted, ref } from "vue";
+import Header from "@/components/Header.vue";
 
 const zoom = ref(null);
 window.addEventListener("optimizedResize", function () {
