@@ -10,7 +10,8 @@
   justify-content: space-between;
 }
 .p1,
-.p2 {
+.p2,
+.bg {
   background-repeat: no-repeat;
 }
 .p1 {
@@ -21,7 +22,7 @@
 .p2 {
   width: 670px;
   position: relative;
-  .c4{
+  .c4 {
     bottom: 30px;
   }
   .dec {
@@ -32,11 +33,22 @@
       width: 201px;
       height: 106px;
       background-image: url(../../assets/images/tag.png);
+      text-align: center;
+      .title {
+        background: linear-gradient(180deg, #2079f5 25%, #27ffff 75%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-size: 26px;
+        font-weight: 600;
+        line-height: 55px;
+      }
+      .numb {
+        font-size: 24px;
+        font-weight: 600;
+      }
     }
   }
 }
-.c1,
-.c2,
 .c3,
 .c4 {
   position: absolute;
@@ -48,20 +60,22 @@
   width: 652px;
   height: 359px;
   background-image: url(../../assets/images/huan.png);
+  position: absolute;
   top: 12%;
   z-index: 1;
 }
 .c2 {
   width: 517px;
   height: 517px;
-  background-image: url(../../assets/images//cicle.png);
+  background-image: url(../../assets/images/cicle.png);
+  left: 65px;
+  position: absolute;
+  animation: roate2 8s infinite linear;
+  -webkit-animation: roate2 8s infinite linear;
   z-index: 2;
 }
 .c3 {
   z-index: 3;
-}
-
-.right-box {
 }
 .p3 {
   width: 533px;
@@ -73,4 +87,69 @@
   height: 303px;
   background-image: url(../../assets/images/right_box2.png);
   margin-top: 30px;
+}
+.bototm {
+  margin-top: 20px;
+  .b1,
+  .b8 {
+    .bg {
+      width: 138px;
+      height: 148px;
+      background-image: url(../../assets/images/border.png);
+    }
+  }
+  .b8 {
+    .bg {
+      -webkit-transform: scaleX(-1);
+      -moz-transform: scaleX(-1);
+      -ms-transform: scaleX(-1);
+      -o-transform: scaleX(-1);
+      transform: scaleX(-1);
+    }
+  }
+  .b2,
+  .b3,
+  .b4 {
+    padding-top: 30px;
+    position: relative;
+    .bg1{
+      width: 105px;
+      height: 105px;
+      background-image: url(../../assets/images/cricle4.png);
+      margin: 0 0 0 15px;
+      animation: roate1 8s infinite linear;
+      -webkit-animation: roate1 8s infinite linear;
+      position: absolute;
+    }
+    .bg2{
+      width: 89px;
+      height: 92px;
+      background-image: url(../../assets/images/cricle3.png);
+      margin: 6px 0 0 22px;
+      animation: roate2 8s infinite linear;
+      -webkit-animation: roate2 8s infinite linear;
+      position: absolute;
+    }
+    .tag{
+      margin-top: 120px;
+    }
+  }
+  .b5,
+  .b6,
+  .b7 {
+    .bg {
+      width: 104px;
+      height: 104px;
+      background-image: url(../../assets/images/cricle5.png);
+      margin: 30px auto 15px auto;
+      animation: roate2 8s infinite linear;
+      -webkit-animation: roate2 8s infinite linear;
+    }
+  }
+  .tag {
+    width: 144px;
+    height: 40px;
+    background-image: url(../../assets/images/tag2.png);
+    
+  }
 }
