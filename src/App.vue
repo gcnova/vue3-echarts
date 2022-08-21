@@ -2,7 +2,7 @@
 <template>
   <div class="root">
     <router-view></router-view>
-  </div>
+  </div>zoom
 </template>
 
 <script setup lang="ts">
@@ -57,5 +57,8 @@ onMounted(() => {
   position: relative;
   overflow: hidden;
   color: #ffffff;
+  background-image: url(@/assets/images/bg.png);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
 }
 </style>
