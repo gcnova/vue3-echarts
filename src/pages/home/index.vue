@@ -28,39 +28,47 @@
     </div>
     <div class="bototm">
       <div class="b1">
+        <div class="dec">500</div>
         <div class="bg"></div>
-        <div class="tag"></div>
+        <div class="tag">正常人数</div>
       </div>
       <div class="b2">
         <div class="bg1"></div>
         <div class="bg2"></div>
-        <div class="tag"></div>
+        <div class="dec">500</div>
+        <div class="tag">缺勤</div>
       </div>
       <div class="b3">
         <div class="bg1"></div>
         <div class="bg2"></div>
-        <div class="tag"></div>
+        <div class="dec">500</div>
+        <div class="tag">迟到</div>
       </div>
       <div class="b4">
         <div class="bg1"></div>
         <div class="bg2"></div>
-        <div class="tag"></div>
+        <div class="dec">500</div>
+        <div class="tag">已出勤人数</div>
       </div>
       <div class="b5">
         <div class="bg"></div>
-        <div class="tag"></div>
+        <div class="dec">500</div>
+        <div class="tag">缺勤比率</div>
       </div>
       <div class="b6">
         <div class="bg"></div>
-        <div class="tag"></div>
+        <div class="dec">500</div>
+        <div class="tag">迟到比率</div>
       </div>
       <div class="b7">
         <div class="bg"></div>
-        <div class="tag"></div>
+        <div class="dec">500</div>
+        <div class="tag">早退比率</div>
       </div>
       <div class="b8">
+        <div class="dec">100%</div>
         <div class="bg"></div>
-        <div class="tag"></div>
+        <div class="tag">出勤比率</div>
       </div>
     </div>
   </div>
