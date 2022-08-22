@@ -18,6 +18,18 @@
   width: 524px;
   height: 700px;
   background-image: url(@/assets/images/left_box.png);
+  .list{
+    width: 400px;
+    margin: 70px auto 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: rgba(20, 48, 107, 0.5);
+    div {
+      color: #03e6e6;
+      text-align: center;
+    }
+  }
 }
 .p2 {
   width: 670px;
@@ -188,5 +200,18 @@
       top: 28%;
       left: 52%;
     }
+  }
+}
+.temper-scroll {
+  height: 500px;
+  width: 350px;
+  margin: 30px auto;
+  overflow: hidden;
+  .scroll-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 3px 0;
+    font-size: 18px;
   }
 }

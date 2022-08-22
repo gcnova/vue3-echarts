@@ -2,7 +2,30 @@
 <template>
   <div class="main">
     <div class="top">
-      <div class="p1"></div>
+      <div class="p1">
+        <div class="list">
+          <div>姓名</div>
+          <div>部门</div>
+          <div>时间</div>
+        </div>
+        <vue3-seamless-scroll
+            :list="attendData"
+            :step="1"
+            :singleHeight="30"
+            hover
+            class="temper-scroll"
+          >
+            <div
+              class="scroll-item"
+              v-for="(item, index) in attendData"
+              :key="index"
+            >
+              <span>{{ item.name }}</span>
+              <span>{{ item.depart }}</span>
+              <span>{{ item.time }}</span>
+            </div>
+          </vue3-seamless-scroll>
+      </div>
       <div class="p2">
         <div class="c1"></div>
         <div class="c2"></div>
@@ -75,6 +98,30 @@
 </template>
 
 <script setup lang="ts">
+import { ref } from "vue";
+import { Vue3SeamlessScroll } from "vue3-seamless-scroll";
+
+// 模拟数据
+let attendData = ref([
+  { name: "张三", depart: "研发部", time: "2022.08.30" },
+  { name: "李四", depart: "人力部", time: "2022.08.30" },
+  { name: "王五", depart: "研发部", time: "2022.08.30" },
+  { name: "张三", depart: "研发部", time: "2022.08.30" },
+  { name: "李四", depart: "行政部", time: "2022.08.30" },
+  { name: "王五", depart: "人力部", time: "2022.08.30" },
+  { name: "张三", depart: "研发部", time: "2022.08.30" },
+  { name: "李四", depart: "人力部", time: "2022.08.30" },
+  { name: "王五", depart: "研发部", time: "2022.08.30" },
+  { name: "张三", depart: "研发部", time: "2022.08.30" },
+  { name: "李四", depart: "行政部", time: "2022.08.30" },
+  { name: "王五", depart: "人力部", time: "2022.08.30" },
+  { name: "张三", depart: "研发部", time: "2022.08.30" },
+  { name: "李四", depart: "人力部", time: "2022.08.30" },
+  { name: "王五", depart: "研发部", time: "2022.08.30" },
+  { name: "张三", depart: "研发部", time: "2022.08.30" },
+  { name: "李四", depart: "行政部", time: "2022.08.30" },
+  { name: "王五", depart: "人力部", time: "2022.08.30" },
+]);
 </script>
 <style lang="less" scoped>
 @import url("./index.less");
