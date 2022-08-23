@@ -31,7 +31,9 @@
         <div class="c1"></div>
         <div class="c2"></div>
         <!-- 饼图 -->
-        <div class="c3"></div>
+        <div class="c3">
+          <div id="shouldTotal"></div>
+        </div>
         <div class="c4">
           <div class="dec">
             <div class="number">
@@ -134,6 +136,7 @@ let attendData = ref([
 onMounted(() => {
   draw1();
   draw2();
+  draw3();
 });
 
 function draw1() {
@@ -224,11 +227,11 @@ function draw1() {
           color: new echarts.graphic.LinearGradient(0, 0, 0, 1, [
             {
               offset: 0,
-              color: "#8bd46e",
+              color: "#397ace",
             },
             {
               offset: 1,
-              color: "#09bcb7",
+              color: "#26d4cd",
             },
           ]),
         },
@@ -244,11 +247,11 @@ function draw1() {
           color: new echarts.graphic.LinearGradient(0, 0, 0, 1, [
             {
               offset: 0,
-              color: "#248ff7",
+              color: "#08dd9d",
             },
             {
               offset: 1,
-              color: "#6851f1",
+              color: "#26d4cc",
             },
           ]),
         },
@@ -440,6 +443,61 @@ function draw2() {
           5, 3, 5, 6, 1, 5, 3, 5, 6, 4, 6, 4, 8, 3, 5, 6, 1, 5, 3, 7, 2, 5, 1,
           4,
         ],
+      },
+    ],
+  };
+
+  myChart.setOption(options);
+}
+
+function draw3() {
+  let shouldTotal = document.getElementById("shouldTotal");
+  shouldTotal.removeAttribute("_echarts_instance_");
+  let myChart = echarts.init(shouldTotal);
+
+  let options = {
+    color: [
+      "#00f1fc",
+      "#00b7ee",
+      "#5578cf",
+      "#5ebbeb",
+      "#d16ad8",
+      "#f8e19a",
+      "#00b7ee",
+      "#81dabe",
+      "#5fc5ce",
+    ],
+    grid: {
+      left: 20,
+      right: 20,
+      top: 0,
+      bottom: 20,
+    },
+    // legend: {
+    //   top: 10,
+    //   textStyle: {
+    //     fontSize: 10,
+    //     color: "rgba(255,255,255,.7)",
+    //   },
+    //   data: ["境外", "境内"],
+    // },
+    series: [
+      {
+        name: "访问来源",
+        type: "pie",
+        radius: "80%",
+        center: ["48%", "55%"],
+        data: [
+          { value: 335, name: "境外" },
+          { value: 310, name: "境内" },
+        ],
+        // itemStyle: {
+        //   emphasis: {
+        //     shadowBlur: 10,
+        //     shadowOffsetX: 0,
+        //     shadowColor: "rgba(0, 0, 0, 0.5)",
+        //   },
+        // },
       },
     ],
   };
