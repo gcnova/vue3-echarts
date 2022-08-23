@@ -491,6 +491,9 @@ function draw3() {
           { value: 335, name: "境外" },
           { value: 310, name: "境内" },
         ],
+        labelLine: {
+          show: false,
+        },
         // itemStyle: {
         //   emphasis: {
         //     shadowBlur: 10,
