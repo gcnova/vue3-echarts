@@ -7,6 +7,12 @@
 
 ![image](https://github.com/gcnova/vue3-echarts/blob/master/src/assets/images/picture.png)
 
+## 项目安装
+
+```
+npm install
+```
+
 ## 项目运行
 
 ```
